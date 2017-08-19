@@ -19,8 +19,16 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
+        'css/style.css',
+        'css/font-awesome-4.2.0/css/font-awesome.min.css'
     ];
     public $js = [
+        'js/jquery.customSelect.min.js',
+        'js/menu.js',
+        'js/radio-chek.js',
+        'js/select_lang.js',
+        'js/slideHP.js',
+        'https://www.google.com/recaptcha/api.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

@@ -97,6 +97,56 @@ class SiteController extends Controller
     }
 
     /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionAbout()
+    {
+        return $this->render('about');
+    }
+
+    /**
+     * Displays Domain Management page.
+     *
+     * @return string
+     */
+    public function actionDomainsManagement()
+    {
+        return $this->render('domains-management');
+    }
+
+    /**
+     * Displays Hosting page.
+     *
+     * @return string
+     */
+    public function actionHosting()
+    {
+        return $this->render('hosting');
+    }
+
+    /**
+     * Displays Domain Management page.
+     *
+     * @return string
+     */
+    public function actionFaq()
+    {
+        return $this->render('faq');
+    }
+
+    /**
+     * Displays Docs page.
+     *
+     * @return string
+     */
+    public function actionDocs()
+    {
+        return $this->render('docs');
+    }
+
+    /**
      * Displays contact page.
      *
      * @return Response|string
@@ -112,15 +162,5 @@ class SiteController extends Controller
         return $this->render('contact', [
             'model' => $model,
         ]);
-    }
-
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
     }
 }
