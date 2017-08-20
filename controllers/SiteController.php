@@ -101,9 +101,9 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
+    public function actionHome()
     {
-        return $this->render('about');
+        return $this->render('home');
     }
 
     /**
@@ -145,6 +145,43 @@ class SiteController extends Controller
     {
         return $this->render('docs');
     }
+    /**
+     * Displays Domain Registration page.
+     *
+     * @return string
+     */
+    public function actionDomainRegistration()
+    {
+        return $this->render('domain-registration');
+    }
+    /**
+     * Displays Domain Pricing page.
+     *
+     * @return string
+     */
+    public function actionDomainPricing()
+    {
+        return $this->render('domain-dali');
+    }
+    /**
+     * Displays Hosting Registration page.
+     *
+     * @return string
+     */
+    public function actionHostingRegistration()
+    {
+        return $this->render('reghost');
+    }
+    /**
+     * Displays Mail Registration page.
+     *
+     * @return string
+     */
+    public function actionMailRegistration()
+    {
+        return $this->render('regmail');
+    }
+
 
     /**
      * Displays contact page.
@@ -163,4 +200,5 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
 }
