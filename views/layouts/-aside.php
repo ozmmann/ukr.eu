@@ -1,6 +1,4 @@
 <aside>
-    <div class="container-fluid">
-
         <div class="wrap">
             <form action="">
                 <div class="login-panel">
@@ -51,7 +49,6 @@
             </ul>
 
         </div>
-    </div>
     <?php
     $this->registerJs("        
         var slides = document.querySelectorAll('#slides .slide');

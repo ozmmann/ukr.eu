@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#insert file="-inc/-head.html"-->
+</head>
+<body>
+<div class="wrapper">
+    <div class="container-fluid">
+        <!--#insert file="-inc/-header.html"-->
+        <div class="row">
+            <div class="col-md-3 col-sm-3 hidden-xs aside">
+                <!--#insert file="-inc/-aside.html"-->
+            </div>
+            <div class="col-md-9">
+                <main>
+                    <form action="">
+                        <div class="form-title">реєстрація доменного ім'я приклад.ukr.eu</div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="radio" id="registered">
+                                <label for="registered">зареєстрований клієнт</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="redgisteredProfile">
+                                    <input type="text" class="RegedLogin" placeholder="Логін">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="redgisteredProfile">
+                                    <input type="text" class="RegedPass" placeholder="Пароль">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="radio" id="newProfile">
+                                    <label for="registered">новий клієнт</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 newProfile">
+                                <input type="text" class="newLogin" placeholder="Ім'я" id="newLogin">
+                                <label for="newLogin">Латиницею</label>
+                            </div>
+                            <div class="col-md-4 newProfile">
+                                <input type="text" class="newSurname" placeholder="Прізвище" id="newSurname">
+                                <label for="newSurname">Латиницею</label>
+                            </div>
+                            <div class="col-md-4 newProfile">
+                                <input type="text" class="newSurname" placeholder="Організація">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 newProfileContacts topPartC">
+                                <input type="text" class="newLogin" placeholder="Місто">
+                            </div>
+                            <div class="col-md-4 newProfileContacts topPartC">
+                                <input type="text" class="newSurname" placeholder="Адреса">
+                            </div>
+                            <div class="col-md-4 newProfileContacts topPartC">
+                                <input type="text" class="newSurname" placeholder="Телефон" id="regPhone">
+                                <label for="regPhone">У форматі +38 (0XX) XXX XX XX</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 newProfileContacts bottomPartC">
+                                <input type="text" class="newLogin" placeholder="E-mail">
+                            </div>
+                            <div class="col-md-4 newProfileContacts bottomPartC">
+                                <input type="text" class="newSurname" placeholder="Пароль" id="regPass">
+                                <label for="regPass">Мінімум 8 знаків. Букви і цифри латиницею</label>
+                            </div>
+                            <div class="col-md-4 newProfileContacts bottomPartC">
+                                <input type="text" class="newSurname" placeholder="Підтвердіть пароль">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                               <p class="warning">*Ці поля є обов'язковими для заповнення</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 confirmRegButton">
+                                <button class="red-button">Далі</button>
+                            </div>
+                        </div>
+                    </form>
+                </main>
+            </div>
+            <div class=" hidden-lg hidden-md hidden-sm col-xs-12 aside">
+            <!--#insert file="-inc/-aside.html"-->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

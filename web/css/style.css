@@ -300,11 +300,6 @@ body {
   .h-nav li+li {
     margin-left: 15px;
   }
-
-  .payment-container .infoPayment p {
-    margin: 50px 0;
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 1083px) {
@@ -363,11 +358,6 @@ body {
 
   .icon-wrap {
     margin-right: 5px;
-  }
-
-  .payment-container .infoPayment p {
-    margin: 50px 0;
-    text-align: center;
   }
 }
 
@@ -468,23 +458,6 @@ body {
   .sp-active {
     font-size: 16px;
   }
-
-  /**/
-
-  .reg-mail-form .reg-mail-input input {
-    width: 79%;
-  }
-
-  .reg-mail-form .reg-mail-input span {
-    width: 20%;
-  }
-
-  .reg-mail-form .reg-mail-input input,
-  .reg-mail-form .reg-mail-input span {
-    font-size: 14px;
-  }
-
-  /**/
 
   .aside .login-panel input {
     font-size: 16px !important;
@@ -694,44 +667,6 @@ td:first-child {
 
 .warning {
   color: red;
-}
-.reg-mail-input input {
-  margin: 20px 0;
-  width: 89%;
-  border-radius: 25px 0 0 25px;
-  border: none;
-  z-index: 30;
-  color: #000;
-  font-family: "RobotoLight";
-}
-
-.reg-mail-input span {
-  display: inline-block;
-  height: 50px;
-  line-height: 50px;
-  font-family: "RobotoRegular";
-  text-align: center;
-  background-color: #fff;
-  margin-left: -3px;
-}
-
-.reg-mail-input span {
-  width: 10%;
-  border-right: 1px solid rgba(0,0,0,.1);
-  border-left: 1px solid rgba(0,0,0,.1);
-  border-radius: 0 25px 25px 0;
-}
-
-.reg-mail-input button {
-  width: 20%;
-  border: none;
-  border-radius: 0 25px 25px 0;
-  text-transform: uppercase;
-}
-
-.reg-mail-input span {
-  -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2);
-  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2);
 }
 input {
   height: 50px;
@@ -972,8 +907,7 @@ aside .red-button {
 }
 
 .push-bottom {
-  position: absolute;
-  bottom: 0;
+  margin-top: 180px;
 }
 
 .btn-mng .red-button {
@@ -1114,27 +1048,11 @@ aside .red-button {
   -webkit-transition: width 150ms ease 100ms;
   transition: width 150ms ease 100ms;
 }
-
-/**/
-
-.faq-page  .infoPayment p {
-  margin-top: 40px;
-}
-
-.faq-mid-block {
-  height: 635px;
-}
-
-.empty-space {
-  height: 460px;
-}
-
-.log-check label {
-  font-weight: bolder;
-  font-size: 1.2em;
-  text-transform: uppercase;
-}
-
-.log-check label span {
-  margin-bottom: 3px;
+.equal {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex:1 0 auto;
 }

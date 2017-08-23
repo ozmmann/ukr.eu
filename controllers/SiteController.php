@@ -116,15 +116,6 @@ class SiteController extends Controller
         return $this->render('domains-management');
     }
 
-    /**
-     * Displays Hosting page.
-     *
-     * @return string
-     */
-    public function actionHosting()
-    {
-        return $this->render('hosting');
-    }
 
     /**
      * Displays Domain Management page.
@@ -162,5 +153,32 @@ class SiteController extends Controller
         return $this->render('contact', [
             'model' => $model,
         ]);
+    }
+    public function actionHp()
+    {
+        return $this->render('hp');
+    }
+    public function actionTyp()
+    {
+        return $this->render('typ');
+    }
+    public function actionContacts()
+    {
+        return $this->render('contacts');
+    }
+
+    public function actionManager()
+    {
+        return $this->render('manager');
+    }
+
+    /**
+     * Displays Hosting page.
+     *
+     * @return string
+     */
+    public function actionHosting()
+    {
+        return $this->render('hosting');
     }
 }
