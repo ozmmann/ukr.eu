@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-
-=======
 <div class="col-md-9 col-sm-9">
->>>>>>> 35240d819b88ae9f5870e815d0f626e97de434fe
     <div class="mang-wrap">
-        <div class="form-title">Реєстрація хостинг клієнта</div>
+        <div class="form-title">реєстрація доменного ім'я приклад.ukr.eu</div>
         <form action="" class="reghost">
             <div class="row">
                 <div class="col-md-12">
@@ -71,7 +67,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <input type="text" placeholder="Логін*">
-                        <span>Латиницею</span>
+
                     </div>
                     <div class="col-md-4">
                         <input type="password" placeholder="Пароль">
@@ -84,18 +80,14 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-<<<<<<< HEAD
-                        <span>*Ці поля є обов’язковими для заповнення </span>
-=======
                         <span style="color: #E82D24">*Ці поля є обов’язковими для заповнення </span>
->>>>>>> 35240d819b88ae9f5870e815d0f626e97de434fe
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="btn-mng">
-                        <button class="red-button btn-big">перейти до оплати</button>
+                        <button class="red-button btn-big">Далі</button>
                     </div>
                 </div>
             </div>
@@ -116,7 +108,4 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-=======
 </div>
->>>>>>> 35240d819b88ae9f5870e815d0f626e97de434fe

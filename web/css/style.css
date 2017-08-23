@@ -1048,7 +1048,8 @@ aside .red-button {
   -webkit-transition: width 150ms ease 100ms;
   transition: width 150ms ease 100ms;
 }
-.equal {
+
+.equals {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1056,3 +1057,28 @@ aside .red-button {
   display: flex;
   flex:1 0 auto;
 }
+
+/**/
+
+.faq-page  .infoPayment p {
+  margin-top: 40px;
+}
+
+.faq-mid-block {
+  height: 635px;
+}
+
+.empty-space {
+  height: 460px;
+}
+
+.log-check label {
+  font-weight: bolder;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.log-check label span {
+  margin-bottom: 3px;
+}
+
