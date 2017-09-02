@@ -1,4 +1,4 @@
-<div class="col-md-9 col-sm-9 faq-mid-block">
+<div class="faq-mid-block">
     <p class="form-title">Реєстрація доменного ім’я. приклад.ukr.eu</p>
     <div class="empty-space"></div>
     <div class="row">
