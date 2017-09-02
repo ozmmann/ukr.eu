@@ -96,15 +96,6 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionHome()
-    {
-        return $this->render('home');
-    }
 
     /**
      * Displays Domain Management page.
@@ -150,7 +141,7 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionDomainPricing()
+    public function actionDomainDali()
     {
         return $this->render('domain-dali');
     }
