@@ -18,13 +18,14 @@
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <div class="form-theme">
-                                <input type="text" placeholder="Тема">
+                                <?= $form->field($model,'subject',['inputOptions'=>['class'=>'e']])->input('text',['placeholder' => "Тема"])->label(false)?>
                             </div>
                             <div class="form-masage">
                                 <textarea placeholder="Текст повідомлення"></textarea>
                             </div>
                             <div class="form-company">
                                 <input type="text" placeholder="Керуюча компанія">
+                                <?= $form->field($model,'company',['inputOptions'=>['class'=>'e']])->input('text',['placeholder' => "Керуюча компанія"])->label(false) ?>
                             </div>
                         </div>
                     </div>

@@ -20,7 +20,7 @@ class FeedbackForm extends Model
     public function rules()
     {
         return [
-            [['name','email'],'required'],
+            [['name','email','subject','company'],'required'],
             ['name', 'string','min'=>3, 'tooShort'=>'Слишком мало символов'],
             ['text','safe'],
         ];
