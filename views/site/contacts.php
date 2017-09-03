@@ -5,17 +5,11 @@
     <div class="row">
         <div class="col-md-8 col-sm-8">
             <main>
-                <?php $form = ActiveForm::begin(['fieldConfig'=>[
-                                                    'options'=>[
-                                                        'tag'=>false,
-                                                            ],
-                                                        ],
-                                                    ]); ?>
+                <?php $form = ActiveForm::begin(); ?>
                     <div class="form-title">форма зворотнього зв’язку</div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <?= $form->field($model,'name',['template' => '{input}',
-                                'options' => ['tag' => false]])->input('text',['placeholder' => "Ім'я"])->label(false); ?>
+                            <?= $form->field($model,'name',['inputOptions'=>['class'=>'e']])->input('text',['placeholder' => "Ім'я"])->label(false); ?>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <input type="email" placeholder="E-mail">
