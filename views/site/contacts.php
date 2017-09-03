@@ -10,9 +10,9 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <?= $form->field($model,'name',['inputOptions'=>['class'=>'e']])->input('text',['placeholder' => "Ім'я"])->label(false); ?>
-                        </div>
+                    </div>
                         <div class="col-md-6 col-sm-6">
-                            <input type="email" placeholder="E-mail">
+                            <?= $form->field($model,'email',['inputOptions'=>['class'=>'e']])->input('email',['placeholder' => "E-mail"])->label(false); ?>
                         </div>
                     </div>
                     <div class="row">
@@ -21,7 +21,7 @@
                                 <input type="text" placeholder="Тема">
                             </div>
                             <div class="form-masage">
-                                <textarea placeholder="Текст повідомлення"></textarea>
+                                <?= $form->field($model,'text', ['inputOptions'=>['class'=>'e']])->textarea(['placeholder' => "Текст повідомлення"], ['rows' => '6'])->label(false); ?>
                             </div>
                             <div class="form-company">
                                 <input type="text" placeholder="Керуюча компанія">
