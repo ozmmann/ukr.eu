@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\FeedbackForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -191,9 +192,17 @@ class SiteController extends Controller
     {
         return $this->render('typ');
     }
+
+    /**
+     * Displays Contacts page.
+     * @return string|Response
+     */
+
     public function actionContacts()
     {
-        return $this->render('contacts');
+        $model = new FeedbackForm();
+
+        return $this->render('contacts', compact('model'));
     }
 
     public function actionManager()

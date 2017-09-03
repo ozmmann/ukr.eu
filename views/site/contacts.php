@@ -1,12 +1,21 @@
+<?php  use yii\widgets\ActiveForm;
+        use yii\helpers\Html;
+?>
 
     <div class="row">
         <div class="col-md-8 col-sm-8">
             <main>
-                <form action="">
+                <?php $form = ActiveForm::begin(['fieldConfig'=>[
+                                                    'options'=>[
+                                                        'tag'=>false,
+                                                            ],
+                                                        ],
+                                                    ]); ?>
                     <div class="form-title">форма зворотнього зв’язку</div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <input type="text" placeholder="Ім‘я">
+                            <?= $form->field($model,'name',['template' => '{input}',
+                                'options' => ['tag' => false]])->input('text',['placeholder' => "Ім'я"])->label(false); ?>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <input type="email" placeholder="E-mail">
@@ -37,7 +46,7 @@
                             <button class="red-button">відправити</button>
                         </div>
                     </div>
-                </form>
+                <?php $form = ActiveForm::end(); ?>
             </main>
         </div>
         <div class="col-md-4 col-sm-4">
