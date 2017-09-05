@@ -2,6 +2,7 @@
 
 namespace app\models;
 
+
 class User extends \yii\base\Object implements \yii\web\IdentityInterface
 {
     public $id;
@@ -101,4 +102,6 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
     {
         return $this->password === $password;
     }
+    /*аунтефикация*/
+    
 }
