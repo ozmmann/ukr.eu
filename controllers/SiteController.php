@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\FeedbackForm;
+use app\models\RegForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -162,7 +163,14 @@ class SiteController extends Controller
      */
     public function actionMailRegistration()
     {
-        return $this->render('regmail');
+        $userReg = new RegForm();
+        if($userReg->load(Yii::$app->request->post())){
+
+            if($userReg->save()){
+                return $this->refresh();
+            }
+        }
+        return $this->render('regmail', ['userReg'=>$userReg,]);
     }
 
 
@@ -179,7 +187,7 @@ class SiteController extends Controller
 
             return $this->refresh();
         }
-        return $this->render('contact', [
+        return $this->render('contacts', [
             'model' => $model,
         ]);
     }
@@ -202,7 +210,15 @@ class SiteController extends Controller
     {
         $model = new FeedbackForm();
 
-        return $this->render('contacts', compact('model'));
+
+        if ($model->load(Yii::$app->request->post()) && $model->feedback(Yii::$app->params['adminEmail'])) {
+            Yii::$app->session->setFlash('contactFormSubmitted');
+            return $this->refresh();
+        }
+        return $this->render('contacts', [
+            'model' => $model,
+        ]);
+
     }
 
     public function actionManager()

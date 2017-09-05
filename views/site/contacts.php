@@ -21,7 +21,7 @@
                                 <?= $form->field($model,'subject',['inputOptions'=>['class'=>'e']])->input('text',['placeholder' => "Тема"])->label(false)?>
                             </div>
                             <div class="form-masage">
-                                <?= $form->field($model,'text', ['inputOptions'=>['class'=>'e']])->textarea(['placeholder' => "Текст повідомлення"], ['rows' => '6'])->label(false); ?>
+                                <?= $form->field($model,'text1', ['inputOptions'=>['class'=>'e']])->textarea(['placeholder' => "Текст повідомлення"], ['rows' => '6'])->label(false); ?>
                             </div>
                             <div class="form-company">
                                 <?= $form->field($model,'company',['inputOptions'=>['class'=>'e']])->input('text',['placeholder' => "Керуюча компанія"])->label(false) ?>

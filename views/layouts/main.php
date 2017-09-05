@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrapper">
     <?php include '-header.php'; ?>
     <div class="container-fluid">
-        <div class="row equal">
+        <div class="row eq">
             <div class="col-md-3 col-sm-3 hidden-xs aside">
                 <?php include_once '-aside.php'; ?>
             </div>

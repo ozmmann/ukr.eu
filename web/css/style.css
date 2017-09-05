@@ -18,6 +18,12 @@ body {
   height: 100%;
   font-family: "RobotoRegular";
 }
+
+.eq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .clearfix {
   content: "";
   display: block;
@@ -118,6 +124,7 @@ body {
 
 .f-contact,
 .h-contact {
+  font-size: 18px;
   float: right;
   line-height: 50px;
 }
@@ -144,31 +151,67 @@ body {
 
 .number {
   margin-right: 20px;
+  color: #333;
+}
+
+.lang-container {
+  margin-right: 10px;
+  position: relative;
+  width: 80px;
+  display: inline-block;
+  line-height: normal;
+}
+
+.selec.clicked {
+  padding: 20px;
+  top: 3px;
+  right: 15px;
+  background: #fff url("../img/arrow-up.png") no-repeat 52px 24px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0,.3);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0,.3);
+}
+
+.selec {
+  position: absolute;
+  top: 23px;
+  width: 100%;
+  margin-top: -21px;
+  cursor: pointer;
+  z-index: 10;
+  background: url("../img/arrow-down.png") no-repeat 34px 7px;
+}
+
+.selec.mod1 {
+  text-align: left;
+}
+
+.selec div {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  font-family: 'RobotoRegular';
+  text-transform: uppercase;
+}
+
+.selec div:nth-child(2) {
+  margin: 5px 0;
+}
+
+.selec.clicked div:hover {
+  color: #e82d24;
 }
 
 .lang {
-  display: inline-block;
+  visibility: hidden;
+  position: relative;
+  z-index: 0;
 }
 
-.customSelect {
-  width: 46px;
-  background: url("../img/arrow-down.png") no-repeat right 44%;
-  font-family: "RobotoRegular";
-  font-size: 18px;
-  text-transform: uppercase;
+.hide {
+  display: none;
 }
 
-.customSelect.customSelectOpen {
-  -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .2);
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .2);
-  display: inline-block;
-  text-transform: uppercase;
-}
 
-.customSelectInner {
-  border: none;
-  outline: none;
-}
 
 .domen-name button:hover {
   color: #e82d24;
@@ -314,12 +357,17 @@ body {
   }
 
   .number {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .HP-advanteges img {
     width: 100%;
     max-width: 222px;
+  }
+
+  .f-contact,
+  .h-contact {
+    font-size: 16px;
   }
 }
 
@@ -365,6 +413,10 @@ body {
   .login-panel .login-title {
     padding-bottom: 10px;
     font-size: 16px;
+  }
+
+  .f-contact {
+    font-size: 14px;
   }
 }
 
@@ -418,6 +470,7 @@ body {
   .f-contact,
   .h-contact,
   .f-copyright {
+    font-size: 16px;
     width: 100%;
     text-align: center;
   }
@@ -505,6 +558,11 @@ body {
 
   .thanks-item .sub-title-thanks {
     font-size: 20px;
+  }
+
+  .f-contact,
+  .h-contact {
+    font-size: 14px;
   }
 }
 
@@ -907,7 +965,8 @@ aside .red-button {
 }
 
 .push-bottom {
-  margin-top: 180px;
+  position: absolute;
+  bottom: 0;
 }
 
 .btn-mng .red-button {
@@ -1048,37 +1107,3 @@ aside .red-button {
   -webkit-transition: width 150ms ease 100ms;
   transition: width 150ms ease 100ms;
 }
-
-.equals {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex:1 0 auto;
-}
-
-/**/
-
-.faq-page  .infoPayment p {
-  margin-top: 40px;
-}
-
-.faq-mid-block {
-  height: 635px;
-}
-
-.empty-space {
-  height: 460px;
-}
-
-.log-check label {
-  font-weight: bolder;
-  font-size: 1.2em;
-  text-transform: uppercase;
-}
-
-.log-check label span {
-  margin-bottom: 3px;
-}
-

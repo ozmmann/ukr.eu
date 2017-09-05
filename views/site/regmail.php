@@ -1,21 +1,25 @@
+<?php  use yii\widgets\ActiveForm;
+use yii\helpers\Html;
+?>
 <main>
-    <form action="">
+    <?php $form = ActiveForm::begin(); ?>
         <div class="reg-mail-form">
             <div class="form-title">Реєстрація поштової скриньки</div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="reg-mail-input">
-                        <input type="email" placeholder="Email*">
+                        <?= $form->field($userReg,'user_email',['inputOptions'=>['class'=>'e']])->input('email',['placeholder' => "Email*"])->label(false); ?>
                         <span class="ukr-copy">@ukr.eu</span>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <input type="password" placeholder="Пароль*">
+                    <?= $form->field($userReg,'password',['inputOptions'=>['class'=>'e']])->input('password',['placeholder' => "Пароль*"])->label(false); ?>
                     <span>Мінімум 8 знаків. Букви і цифри латиницею.</span>
                 </div>
                 <div class="col-md-4">
+                    <?= $form->field($userReg,'password',['inputOptions'=>['class'=>'e']])->input('password',['placeholder' => "Підтвердіть пароль*"])->label(false); ?>
                     <input type="password" placeholder="Підтвердіть пароль*">
                 </div>
                 <div class="col-md-4">
@@ -39,7 +43,7 @@
                 </div>
             </div>
         </div>
-    </form>
+    <?php ActiveForm::end(); ?>
     <div class="payment-container">
         <div class="col-md-7">
             <div class="infoPayment">

@@ -10,18 +10,11 @@
 						<div class="icon-wrap"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
 						</div>
 						<a href="tel:0 800 214 513" class="number"> 0 800 214 513</a>
-                        <div class="lang-container">
-                            <select name="lang" class="lang">
-                                <option value="uk">uk</option>
-                                <option value="ru">ru</option>
-                                <option value="en">en</option>
-                            </select>
-                            <div class="selec mod1">
-                                <div >uk</div>
-                                <div class="hide">ru</div>
-                                <div class="hide">en</div>
-                            </div>
-                        </div>
+							<select name="lang" class="lang">
+								<option value="ua">ua</option>
+								<option value="ru">ru</option>
+								<option value="en">en</option>
+							</select>
 					</div>
 				</div>
 				<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
@@ -60,18 +53,11 @@
 						<div class="icon-wrap"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
 						</div>
 						<a href="tel:0 800 214 513" class="number"> 0 800 214 513</a>
-                        <div class="lang-container">
-                            <select name="lang" class="lang">
-                                <option value="uk">uk</option>
-                                <option value="ru">ru</option>
-                                <option value="en">en</option>
-                            </select>
-                            <div class="selec mod1">
-                                <div >uk</div>
-                                <div class="hide">ru</div>
-                                <div class="hide">en</div>
-                            </div>
-                        </div>
+						<select name="lang" class="lang">
+							<option value="ua">ua</option>
+							<option value="ru">ru</option>
+							<option value="en">en</option>
+						</select>
 					</div>
 				</div>
 			</div>
