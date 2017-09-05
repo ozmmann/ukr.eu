@@ -300,6 +300,9 @@ body {
   .h-nav li+li {
     margin-left: 15px;
   }
+  .reg-mail-input span {
+    width: 20%;
+  }
 }
 
 @media only screen and (max-width: 1083px) {
@@ -458,6 +461,12 @@ body {
   .sp-active {
     font-size: 16px;
   }
+  .reg-mail-input input {
+    width: 79%;
+  }
+  .reg-mail-input span{
+    width: 20%;
+  }
 
   .aside .login-panel input {
     font-size: 16px !important;
@@ -479,6 +488,7 @@ body {
   .row .girl-second {
     min-height: 560px;
   }
+
 }
 
 /* Extra Small devices, Phones */
@@ -506,6 +516,7 @@ body {
   .thanks-item .sub-title-thanks {
     font-size: 20px;
   }
+
 }
 
 /*Custom, Iphone Retina */
@@ -1082,3 +1093,24 @@ aside .red-button {
   margin-bottom: 3px;
 }
 
+.reg-mail-input input {
+  width: 89%;
+  border: none;
+  z-index: 30;
+  color: #000;
+  font-family: "RobotoLight";
+  border-radius: 25px 0 0 25px ;
+}
+.reg-mail-input span {
+  width: 10%;
+  border: 1px solid rgba(0,0,0,.1);
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-family: "RobotoRegular";
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+  margin-left: -2px;
+  border-radius: 0 25px 25px 0;
+}
