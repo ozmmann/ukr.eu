@@ -187,7 +187,7 @@ class SiteController extends Controller
 
             return $this->refresh();
         }
-        return $this->render('contacts', [
+        return $this->render('contact', [
             'model' => $model,
         ]);
     }
