@@ -313,8 +313,12 @@ body {
 .HP-info,
 .HP-advanteges,
 .HP-bottom-info p {
+  margin-top: 20px;
   font-family: "RobotoLight";
   font-size: 16px;
+}
+.HP-bottom-info p {
+  margin-top: 20px;
 }
 
 .HP-advanteges-wrap {

@@ -51,7 +51,7 @@
                             <li><a href="<?= Url::to(['/site/hosting'])?>">Хостинг</a></li>
                             <li><a href="<?= Url::to(['/site/faq'])?>">FAQ</a></li>
                             <li><a href="<?= Url::to(['/site/docs'])?>">Документи</a></li>
-                            <li><a href="<?= Url::to(['/site/contact'])?>">Контакти</a></li>
+                            <li><a href="<?= Url::to(['/site/contacts'])?>">Контакти</a></li>
 						</ul>
 					</nav>
 				</div>
