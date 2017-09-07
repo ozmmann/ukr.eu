@@ -44,7 +44,7 @@
                             <li><a href="<?= Url::to(['/site/hosting'])?>">Хостинг</a></li>
                             <li><a href="<?= Url::to(['/site/faq'])?>">FAQ</a></li>
                             <li><a href="<?= Url::to(['/site/docs'])?>">Документи</a></li>
-                            <li><a href="<?= Url::to(['/site/contact'])?>">Контакти</a></li>
+                            <li><a href="<?= Url::to(['/site/contacts'])?>">Контакти</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -85,6 +85,9 @@
 					<div class="status-panel-default sp-active">
 						Доменне  ім'я  у  зонi  <span>ukr.eu</span>  всього  від  3  євро  на  рік*.
 					</div>
+                    <?php if (!Yii::$app->user->isGuest): ?>
+                        <a href="<?= yii\helpers\Url::to(['/site/logout']) ?>"><i class="fa fa-user"></i><?= Yii::$app->user->identity['username']?> (Выход)</a>
+                    <?php endif; ?>
 				</div>
 			</div>
 		</div>				
