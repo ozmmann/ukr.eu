@@ -12,7 +12,7 @@ $config = [
         'admin' => [
             'class' => 'app\modules\admin\Module',
             'layout' =>'admin',
-            //'defaultRoute'=> 'orders\index',
+            'defaultRoute'=> 'orders/index',
         ],
     ],
     'components' => [
