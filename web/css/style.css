@@ -24,6 +24,11 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+
+div[class*='col-md'] {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
 .clearfix {
   content: "";
   display: block;
@@ -179,6 +184,7 @@ body {
   cursor: pointer;
   z-index: 10;
   background: url("../img/arrow-down.png") no-repeat 34px 7px;
+  text-align: left;
 }
 
 .selec.mod1 {
@@ -313,12 +319,8 @@ body {
 .HP-info,
 .HP-advanteges,
 .HP-bottom-info p {
-  margin-top: 20px;
   font-family: "RobotoLight";
   font-size: 16px;
-}
-.HP-bottom-info p {
-  margin-top: 20px;
 }
 
 .HP-advanteges-wrap {
@@ -347,8 +349,19 @@ body {
   .h-nav li+li {
     margin-left: 15px;
   }
-  .reg-mail-input span {
-    width: 20%;
+
+  .lang-container {
+    margin-right: 0;
+    width: 60px;
+  }
+
+  .selec.clicked {
+    padding: 20px 10px;
+    top: 3px;
+    right: 15px;
+    background: #fff url("../img/arrow-up.png") no-repeat 42px 25px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0,.3);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0,.3);
   }
 }
 
@@ -364,7 +377,7 @@ body {
   }
 
   .number {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   .HP-advanteges img {
@@ -375,6 +388,10 @@ body {
   .f-contact,
   .h-contact {
     font-size: 16px;
+  }
+
+  .icon-wrap {
+    margin-right: 5px;
   }
 }
 
@@ -409,10 +426,6 @@ body {
 
   .facebook {
     margin-left: 8px;
-  }
-
-  .icon-wrap {
-    margin-right: 5px;
   }
 }
 
@@ -500,6 +513,10 @@ body {
     text-align: center;
   }
 
+  .infoPayment {
+    text-align: center;
+  }
+
   .domen-name input {
     width: 60%;
   }
@@ -517,12 +534,6 @@ body {
   .domen-name button,
   .sp-active {
     font-size: 16px;
-  }
-  .reg-mail-input input {
-    width: 79%;
-  }
-  .reg-mail-input span{
-    width: 20%;
   }
 
   .aside .login-panel input {
@@ -546,6 +557,9 @@ body {
     min-height: 560px;
   }
 
+  .eq {
+    display: block;
+  }
 }
 
 /* Extra Small devices, Phones */
@@ -577,6 +591,10 @@ body {
   .f-contact,
   .h-contact {
     font-size: 14px;
+  }
+
+  .selec {
+    background: url("../img/arrow-down.png") no-repeat 24px 5px;
   }
 }
 
@@ -1120,61 +1138,4 @@ aside .red-button {
   background: #e82d24;
   -webkit-transition: width 150ms ease 100ms;
   transition: width 150ms ease 100ms;
-}
-
-
-
-.equals {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex:1 0 auto;
-}
-
-/**/
-
-.faq-page  .infoPayment p {
-  margin-top: 40px;
-}
-
-.faq-mid-block {
-  height: 635px;
-}
-
-.empty-space {
-  height: 460px;
-}
-
-.log-check label {
-  font-weight: bolder;
-  font-size: 1.2em;
-  text-transform: uppercase;
-}
-
-.log-check label span {
-  margin-bottom: 3px;
-}
-
-.reg-mail-input input {
-  width: 89%;
-  border: none;
-  z-index: 30;
-  color: #000;
-  font-family: "RobotoLight";
-  border-radius: 25px 0 0 25px ;
-}
-.reg-mail-input span {
-  width: 10%;
-  border: 1px solid rgba(0,0,0,.1);
-  display: inline-block;
-  height: 50px;
-  line-height: 50px;
-  font-family: "RobotoRegular";
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
-  margin-left: -2px;
-  border-radius: 0 25px 25px 0;
 }

@@ -36,7 +36,7 @@ AppAsset::register($this);
                     <?= $content ?>
             </div>
             <div class="hidden-lg hidden-md hidden-sm col-xs-12 aside">
-                <?php include_once '-aside.php'; ?>
+                <?php include '-aside.php'; ?>
             </div>
         </div>
     </div>
