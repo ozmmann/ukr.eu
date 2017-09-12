@@ -29,6 +29,11 @@ div[class*='col-md'] {
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
+
+div.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
 .clearfix {
   content: "";
   display: block;
