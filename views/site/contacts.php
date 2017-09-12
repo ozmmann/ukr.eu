@@ -1,10 +1,10 @@
 <?php  use yii\widgets\ActiveForm;
         use yii\helpers\Html;
 ?>
-
+<main>
     <div class="row">
         <div class="col-md-8 col-sm-8">
-            <main>
+
                 <?php $form = ActiveForm::begin(); ?>
                     <div class="form-title">форма зворотнього зв’язку</div>
                     <div class="row">
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                 <?php $form = ActiveForm::end(); ?>
-            </main>
+
         </div>
         <div class="col-md-4 col-sm-4">
             <div class="cont-img-wrap">
@@ -65,3 +65,4 @@
             </div>
         </div>
     </div>
+</main>
